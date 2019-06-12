@@ -30,6 +30,12 @@ cols_with_missing = [col for col in X_train.columns
 # Drop columns in training and validation data
 reduced_X_train = X_train.drop(cols_with_missing, axis=1)
 reduced_X_valid = X_valid.drop(cols_with_missing, axis=1)
+	#intro on the dropna pandas function
+#df.dropna()>drops the rows atleast one value is missing
+#df.dropna(axis='columns')>drops the column with atleast one missing value
+#df.dropna(how='all')>drops the rows with all missing values
+#df.dropna(thresh=2)>keep rows with atleast two none zero values
+#df.dropna(subset=['cities','pow'])>>define in which columns to look for the missing values
 
 print("MAE from Approach 1 (Drop columns with missing values):")
 print(score_dataset(reduced_X_train, reduced_X_valid, y_train, y_valid))
