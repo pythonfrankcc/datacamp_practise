@@ -147,3 +147,8 @@ but do not use a very large k as that means that we will be underfitting  '''
 # figsize = size of the figure
 # s=shape
 # marker size
+'''shallow decision trees with small leave size will lead to underfitting but also deep trees will lead to 
+overfitting
+
+
+
