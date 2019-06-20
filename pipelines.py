@@ -87,3 +87,6 @@ preds = my_pipeline.predict(X_valid)
 # Evaluate the model
 score = mean_absolute_error(y_valid, preds)
 print('MAE:', score)
+'''when you want to call several models together one by one and compare their individual_results you just 
+use a simple pipeline and this simplifies the whole process
+'''
